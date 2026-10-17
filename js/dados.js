@@ -134,35 +134,6 @@ const PRODUTOS = [
     giro: 1
   },
 
-  /* ---------- BASTIDORES ---------- */
-  {
-    id: 'bas-01',
-    categoria: 'bastidor',
-    nome: 'Jardim Secreto',
-    preco: 129.90,
-    descricao: 'Composição floral em linho cru.',
-    opcoes: ['15 cm', '20 cm', '25 cm'],
-    giro: -1
-  },
-  {
-    id: 'bas-02',
-    categoria: 'bastidor',
-    nome: 'Retrato Pet',
-    preco: 189.90,
-    descricao: 'Bordado do seu pet a partir de uma foto.',
-    opcoes: ['20 cm', '25 cm'],
-    giro: 1.5
-  },
-  {
-    id: 'bas-03',
-    categoria: 'bastidor',
-    nome: 'Frase Autoral',
-    preco: 109.90,
-    descricao: 'Lettering bordado com a frase que você escolher.',
-    opcoes: ['15 cm', '20 cm'],
-    giro: -1.2
-  },
-
   /* ---------- BADGES ---------- */
   {
     id: 'bad-01',

@@ -740,28 +740,52 @@ nav a:focus-visible {
   transform: rotate(-2deg) scale(1.03);
 }
 
-.marquee div {
+.marquee {
 
-  white-space: nowrap;
+  width: 100%;
+
+  overflow: hidden;      /* esconde o que passa das bordas */
+
+  background: var(--pink);
+
+  border-top: 2px solid var(--black);
+
+  border-bottom: 2px solid var(--black);
+
+  padding: 18px 0;
+
+  transform: rotate(-2deg) scale(1.03);
+}
+
+/* O trilho: carrega as duas cópias e é quem se move */
+.marquee-track {
+
+  display: flex;
+
+  width: max-content;    /* largura da soma das duas cópias */
+
+  animation: marquee 32s linear infinite;
+}
+
+/* Cada cópia */
+.marquee-item {
+
+  flex: 0 0 auto;        /* nunca encolhe para caber */
+
+  white-space: nowrap;   /* nunca quebra linha */
 
   font-family: var(--serif);
 
   font-size: 24px;
 
   font-weight: 800;
-
-  animation: marquee 20s linear infinite;
 }
 
 @keyframes marquee {
 
-  from {
-      transform: translateX(0);
-  }
+  from { transform: translateX(0);    }
 
-  to {
-      transform: translateX(-30%);
-  }
+  to   { transform: translateX(-50%); }
 }
 
 

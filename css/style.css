@@ -2231,6 +2231,17 @@ footer p,
   }
 }
 
+  .estrelas {
+      inset: -30px -10px 0 -10px;
+  }
+
+  .e2, .e6 {
+      display: none;   /* as menores somem: viram sujeira em tela pequena */
+  }
+
+  .e1 { --s: 32px; }
+  .e5 { --s: 26px; }
+
 
 /* Respeita quem desligou animações no sistema */
 @media (prefers-reduced-motion: reduce) {

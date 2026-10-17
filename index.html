@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ateliê Celeste — Bordados feitos à mão</title>
+    <meta name="description" content="Camisetas, moletons, bordados em bastidor e badges termocolantes bordados sob encomenda.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         DECORAÇÕES — adesivos soltos no fundo da página
+         ===================================================== -->
+
+    <div class="sticker sticker-heart heart-1" aria-hidden="true">♥</div>
+    <div class="sticker sticker-heart heart-2" aria-hidden="true">♥</div>
+    <div class="sticker sticker-heart heart-3" aria-hidden="true">♥</div>
+
+    <div class="star star-1" aria-hidden="true">✦</div>
+    <div class="star star-2" aria-hidden="true">✦</div>
+
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+
+    <header class="navbar">
+
+        <a href="#inicio" class="logo">
+            <span>celeste</span>
+            <small>ATELIÊ DE BORDADO</small>
+        </a>
+
+        <nav id="nav">
+            <a href="#camiseta">Camiseta</a>
+            <a href="#moletom">Moletom</a>
+            <a href="#bastidor">Bastidor</a>
+            <a href="#badge">Badge</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="cart-button" id="btnCarrinho" aria-label="Abrir carrinho">
+                Carrinho
+                <span class="cart-count" id="contadorCarrinho">0</span>
+            </button>
+
+            <button class="menu-icon" id="btnMenu" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO
+             ===================================================== -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-text">
+
+                <span class="eyebrow">
+                    BORDADO SOB ENCOMENDA
+                </span>
+
+                <h1>
+                    Sua ideia
+                    <em>bordada</em>
+                    ponto a ponto.
+                </h1>
+
+                <p>
+                    Camisetas, moletons, quadros em bastidor e badges
+                    termocolantes. Cada peça é desenhada, digitalizada e
+                    bordada aqui no ateliê, do primeiro traço ao
+                    último ponto.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#camiseta" class="button primary">
+                        Ver catálogo
+                    </a>
+
+                    <a href="#checkout" class="button secondary">
+                        Encomenda própria
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <!-- cartão inclinado ao fundo -->
+
+                <div class="polaroid polaroid-back">
+
+                    <img src="img/cam-02.jpeg" alt="Camiseta bordada do Ateliê Celeste">
+
+                    <div class="polaroid-caption">
+                        feito à mão
+                    </div>
+
+                </div>
+
+
+                <!-- cartão principal -->
+
+                <div class="main-card">
+
+                    <div class="card-top">
+                        <span>CELESTE</span>
+                        <span>01 / 26</span>
+                    </div>
+
+                    <img src="img/cam-01.jpg" alt="Camisetas bordadas sobre fundo azul">
+
+                    <div class="card-bottom">
+                        <strong>ponto<br>cheio</strong>
+                        <span aria-hidden="true">✦</span>
+                    </div>
+
+                </div>
+
+
+                <!-- mini cartão -->
+
+                <div class="mini-card">
+
+                    <span aria-hidden="true">♥</span>
+
+                    <p>
+                        peça
+                        <br>
+                        única
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FAIXA ROLANTE
+             ===================================================== -->
+
+        <section class="marquee" aria-hidden="true">
+
+            <div>
+                BORDADO À MÁQUINA &nbsp; ✦ &nbsp;
+                PEÇA ÚNICA &nbsp; ✦ &nbsp;
+                FEITO NO BRASIL &nbsp; ✦ &nbsp;
+                BORDADO À MÁQUINA &nbsp; ✦ &nbsp;
+                PEÇA ÚNICA &nbsp; ✦ &nbsp;
+                FEITO NO BRASIL &nbsp; ✦
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CATÁLOGO — preenchido pelo JavaScript
+             Os ids batem com os ids de CATEGORIAS em dados.js
+             ===================================================== -->
+
+        <section class="catalogo section" id="camiseta"></section>
+        <section class="catalogo section" id="moletom"></section>
+        <section class="catalogo section" id="bastidor"></section>
+        <section class="catalogo section" id="badge"></section>
+
+
+        <!-- =====================================================
+             SOBRE
+             ===================================================== -->
+
+        <section class="about section" id="sobre">
+
+            <div class="about-image">
+
+                <div class="image-frame">
+
+                    <img src="img/sobre.jpg" alt="Bastidor e linhas sobre a mesa do ateliê"
+                         onerror="this.style.display='none'">
+
+                    <div class="image-label">
+                        ATELIÊ<br>
+                        CELESTE
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-text">
+
+                <span class="eyebrow">
+                    UM POUCO SOBRE NÓS
+                </span>
+
+                <h2>
+                    Bordado é
+                    <br>
+                    coisa de
+                    <em>paciência.</em>
+                </h2>
+
+                <p>
+                    Cada desenho passa por digitalização antes de virar ponto.
+                    É esse trabalho invisível que faz o bordado ficar firme,
+                    bonito de frente e de trás, e aguentar lavagem depois de
+                    lavagem.
+                </p>
+
+                <p>
+                    Trabalhamos com encomendas personalizadas: traga sua arte,
+                    a foto do seu pet ou só uma ideia solta, que a gente
+                    transforma em peça.
+                </p>
+
+                <a href="#checkout" class="button primary">
+                    Fazer uma encomenda
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FRASE
+             ===================================================== -->
+
+        <section class="statement">
+
+            <div class="statement-inner">
+
+                <span>NOSSA FILOSOFIA</span>
+
+                <h2>
+                    Um ponto de cada vez,
+                    <em>sem pressa.</em>
+                </h2>
+
+                <div class="statement-decoration" aria-hidden="true">
+                    ✦
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DEPOIMENTOS
+             ===================================================== -->
+
+        <section class="testimonials section">
+
+            <div class="section-heading">
+
+                <span>RECADINHOS</span>
+
+                <h2>
+                    O que dizem
+                    <em>por aí.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="testimonial-grid">
+
+                <article class="testimonial">
+
+                    <div class="quote" aria-hidden="true">“</div>
+
+                    <p>
+                        O bordado ficou melhor que a foto que eu mandei.
+                        Já lavei várias vezes e continua intacto.
+                    </p>
+
+                    <strong>— Amanda</strong>
+
+                </article>
+
+
+                <article class="testimonial">
+
+                    <div class="quote" aria-hidden="true">“</div>
+
+                    <p>
+                        Encomendei o retrato do meu cachorro no bastidor
+                        e chorei quando abri a caixa.
+                    </p>
+
+                    <strong>— Sofia</strong>
+
+                </article>
+
+
+                <article class="testimonial">
+
+                    <div class="quote" aria-hidden="true">“</div>
+
+                    <p>
+                        Atendimento atencioso e acabamento impecável.
+                        As badges ficaram perfeitas na jaqueta.
+                    </p>
+
+                    <strong>— Clara</strong>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CHECKOUT
+             ===================================================== -->
+
+        <section class="checkout" id="checkout">
+
+            <div class="checkout-sticker" aria-hidden="true">
+                <span>VAMOS</span>
+                <strong>BORDAR</strong>
+            </div>
+
+            <div class="checkout-inner">
+
+                <div class="checkout-head">
+
+                    <span class="eyebrow">TEM UMA IDEIA?</span>
+
+                    <h2>
+                        Fechar o
+                        <em>pedido.</em>
+                    </h2>
+
+                    <p>
+                        Preencha seus dados. O pedido vai direto para o nosso
+                        WhatsApp com o resumo pronto.
+                    </p>
+
+                </div>
+
+
+                <div class="checkout-grid">
+
+                    <form class="checkout-form" id="formPedido" novalidate>
+
+                        <div class="campo">
+                            <label for="nome">Nome completo *</label>
+                            <input type="text" id="nome" name="nome" autocomplete="name" required>
+                            <span class="campo-erro"></span>
+                        </div>
+
+                        <div class="campo">
+                            <label for="whatsapp">WhatsApp com DDD *</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="31 99999-9999"
+                                   autocomplete="tel" required>
+                            <span class="campo-erro"></span>
+                        </div>
+
+                        <div class="campo">
+                            <label for="cidade">Cidade / UF *</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Belo Horizonte / MG" required>
+                            <span class="campo-erro"></span>
+                        </div>
+
+                        <div class="campo">
+                            <label for="entrega">Entrega</label>
+                            <select id="entrega" name="entrega">
+                                <option value="Correios">Correios</option>
+                                <option value="Retirada no ateliê">Retirar no ateliê</option>
+                                <option value="Entrega local">Entrega local</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="observacao">Personalização / observações</label>
+                            <textarea id="observacao" name="observacao" rows="4"
+                                placeholder="Ex.: monograma com a letra I, linha rosa."></textarea>
+                        </div>
+
+                        <button type="submit" class="button dark full">
+                            Enviar pedido
+                        </button>
+
+                        <p class="checkout-nota">
+                            Você confere tudo no WhatsApp antes de pagar.
+                        </p>
+
+                    </form>
+
+
+                    <aside class="checkout-resumo">
+
+                        <h3>Resumo</h3>
+
+                        <div id="resumoItens"></div>
+
+                        <div class="resumo-total">
+                            <span>TOTAL</span>
+                            <strong id="resumoTotal">R$ 0,00</strong>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         RODAPÉ
+         ===================================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <span>celeste</span>
+            <small>ATELIÊ DE BORDADO</small>
+        </div>
+
+        <p>© 2026 Ateliê Celeste · ateliaceleste.com.br</p>
+
+        <div class="social">
+            Instagram &nbsp; · &nbsp;
+            Pinterest &nbsp; · &nbsp;
+            WhatsApp
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         CARRINHO LATERAL
+         ===================================================== -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="carrinho" id="carrinho" aria-hidden="true">
+
+        <div class="carrinho-topo">
+            <h2>Seu pedido</h2>
+            <button class="carrinho-fechar" id="btnFecharCarrinho" aria-label="Fechar carrinho">&times;</button>
+        </div>
+
+        <div class="carrinho-itens" id="carrinhoItens"></div>
+
+        <div class="carrinho-rodape">
+
+            <div class="carrinho-linha">
+                <span>SUBTOTAL</span>
+                <strong id="carrinhoTotal">R$ 0,00</strong>
+            </div>
+
+            <p class="carrinho-aviso">
+                Frete e prazo de produção combinados no fechamento.
+            </p>
+
+            <button class="button dark full" id="btnFinalizar">
+                Finalizar compra
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <script src="js/dados.js?v=1"></script>
+    <script src="js/app.js?v=1"></script>
+</body>
+
+</html>

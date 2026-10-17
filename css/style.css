@@ -623,7 +623,15 @@ nav a:focus-visible {
 .e4 { --s: 20px; --r: 15deg;  top: 60%;  left: 2%;  }
 .e5 { --s: 38px; --r: -10deg; top: 76%;  left: 86%; }
 .e6 { --s: 16px; --r: 6deg;   top: 30%;  left: -4%; }
+@keyframes cintilar {
+  0%, 100% { opacity: 1;   transform: rotate(var(--r, 0deg)) scale(1);    }
+  50%      { opacity: .55; transform: rotate(var(--r, 0deg)) scale(.88);  }
+}
 
+/* Só três piscam, em ritmos diferentes */
+.e1 { animation: cintilar 4s ease-in-out infinite; }
+.e3 { animation: cintilar 5.5s ease-in-out .8s infinite; }
+.e5 { animation: cintilar 4.8s ease-in-out 1.6s infinite; }
 .sticker {
 
   position: absolute;

@@ -46,8 +46,10 @@ body {
 
   --black: #171717;
   --white: #fffdf5;
+   --star: #8d9bd8;
 
   --serif: "Playfair Display", serif;
+   
 }
 
 
@@ -587,6 +589,13 @@ nav a:focus-visible {
 /* =========================================
    DECORAÇÕES
 ========================================= */
+/* O sprite é só um depósito de formas: não ocupa espaço */
+.sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 
 .sticker {
 

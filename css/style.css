@@ -596,6 +596,33 @@ nav a:focus-visible {
   height: 0;
   overflow: hidden;
 }
+/* ---------- ESTRELAS DO HERO ---------- */
+
+/* Camada que cobre a área do texto e sobra um pouco nas bordas.
+   inset negativo = estica para fora do elemento pai. */
+.estrelas {
+  position: absolute;
+  inset: -50px -40px -20px -50px;
+  z-index: -1;            /* atrás do texto, nunca por cima das letras */
+  pointer-events: none;   /* não rouba cliques dos botões */
+}
+
+.estrela {
+  position: absolute;
+  width: var(--s, 28px);
+  height: var(--s, 28px);
+  color: var(--star);
+  fill: currentColor;     /* o path herda a cor do SVG */
+  transform: rotate(var(--r, 0deg));
+}
+
+/* Posição, tamanho e giro — um bloco por estrela */
+.e1 { --s: 46px; --r: -8deg;  top: 2%;   left: 68%; }
+.e2 { --s: 24px; --r: 12deg;  top: 14%;  left: 58%; }
+.e3 { --s: 32px; --r: -5deg;  top: 40%;  left: 92%; }
+.e4 { --s: 20px; --r: 15deg;  top: 60%;  left: 2%;  }
+.e5 { --s: 38px; --r: -10deg; top: 76%;  left: 86%; }
+.e6 { --s: 16px; --r: 6deg;   top: 30%;  left: -4%; }
 
 .sticker {
 

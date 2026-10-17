@@ -47,6 +47,8 @@ body {
   --black: #171717;
   --white: #fffdf5;
    --star: #8d9bd8;
+  --raio: 14px;
+  --raio-p: 8px;
 
   --serif: "Playfair Display", serif;
    
@@ -479,6 +481,8 @@ nav a:focus-visible {
   object-fit: cover;
 
   display: block;
+
+  border-radius: var(--raio-p);
 }
 
 .card-bottom strong {
@@ -917,6 +921,8 @@ nav a:focus-visible {
   background: var(--white);
 
   border: 2px solid var(--black);
+  
+  border-radius: var(--raio);
 
   transform: rotate(var(--giro, 0deg));
 
@@ -987,11 +993,15 @@ nav a:focus-visible {
   object-fit: cover;
 
   display: block;
+
+  border-radius: var(--raio-p);
 }
 
 /* Quando a foto não existe, o onerror marca esta classe
    e o espaço vira um bloco listrado em vez de um buraco */
 .produto-imagem.sem-foto {
+
+  border-radius: var(--raio-p);
 
   background-image: repeating-linear-gradient(
       45deg,
@@ -1145,6 +1155,7 @@ nav a:focus-visible {
   min-height: 300px;
 
   border: 2px solid var(--black);
+  border-radius: var(--raio);
 
   padding: 15px;
 
@@ -1179,6 +1190,8 @@ nav a:focus-visible {
   background: var(--pink);
 
   border: 2px solid var(--black);
+
+  border-radius: var(--raio);
 
   font-family: var(--serif);
 
@@ -1299,6 +1312,8 @@ nav a:focus-visible {
   background: var(--white);
 
   border: 2px solid var(--black);
+
+  border-radius: var(--raio);
 
   padding: 35px;
 
@@ -1524,6 +1539,7 @@ nav a:focus-visible {
   padding: 13px 15px;
 
   border: 2px solid var(--black);
+  border-radius: var(--raio-p);
 
   background: var(--cream);
 
@@ -1841,6 +1857,7 @@ footer p,
   background: var(--white);
 
   border: 2px solid var(--black);
+  border-radius: var(--raio-p);
 }
 
 .carrinho-item-foto {
@@ -1850,10 +1867,12 @@ footer p,
   height: 62px;
 
   border: 2px solid var(--black);
+  border-radius: var(--raio-p);
 
   background: var(--pink-light);
 
   overflow: hidden;
+  border-radius: var(--raio-p);
 }
 
 .carrinho-item-foto img {
@@ -2151,14 +2170,17 @@ footer p,
 
   .main-card {
       width: 300px;
+      border-radius: var(--raio); 
   }
 
   .polaroid {
       left: -10px;
+      border-radius: var(--raio-p);
   }
 
   .mini-card {
       right: -10px;
+      border-radius: var(--raio);
   }
 
   .section {
@@ -2207,6 +2229,7 @@ footer p,
 
   .image-frame img {
       height: 400px;
+      border-radius: var(--raio-p);
   }
 
   .statement {
@@ -2239,6 +2262,7 @@ footer p,
       padding: 22px;
 
       box-shadow: 5px 5px 0 var(--black);
+      border-radius: var(--raio);
   }
 
   footer {

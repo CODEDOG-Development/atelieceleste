@@ -443,6 +443,8 @@ nav a:focus-visible {
 
   border: 2px solid var(--black);
 
+  border-radius: var(--raio); 
+
   padding: 14px;
 
   top: 45px;

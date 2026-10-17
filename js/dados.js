@@ -33,16 +33,7 @@ const CATEGORIAS = [
     cor: '#9ca8d0',
     fundo: '#f1eff8'
   },
-  {
-    id: 'bastidor',
-    etiqueta: 'PEÇA 03',
-    titulo: 'Bastidor',
-    destaque: 'de parede.',
-    chamada: 'Arte pronta para pendurar, no bastidor de madeira.',
-    rotuloOpcao: 'Diâmetro',
-    cor: '#f1df91',
-    fundo: 'transparent'
-  },
+
   {
     id: 'badge',
     etiqueta: 'PEÇA 04',
